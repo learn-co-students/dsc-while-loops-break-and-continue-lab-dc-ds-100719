@@ -20,6 +20,10 @@ slices_of_pie = 6
 slices_eaten = 0
 # use a while loop to eat each slice of pie
 # add each slice to the slices_eaten variable
+for slice in range(slices_of_pie):
+    print('Another slice eaten!')
+    slices_eaten += 1
+    print('Now eaten {} slices!'.format(slices_eaten))
 ```
 
 
@@ -28,6 +32,7 @@ time_for_breakfast = 1468 # in seconds
 number_of_cooked_pancakes = 0
 # use a while loop to make yourself 5 pancakes for breakfast
 # each pancake takes 27 seconds to cook on each side
+# it takes an average of 5 seconds to flip a pancake, add or remove a pancake from the pan.
 # you must decrease the time_for_breakfast each time you 
 # add a pancake to the skillet (frying pan) or flip a pancake (i.e. 2 times per pancake)
 # there is only room for one pancake at a time
@@ -41,7 +46,7 @@ number_of_cooked_pancakes = 0
 ```python
 line_of_hungry_patrons = list(range(0,30))
 fed_patrons = []
-# use a while loop to to feed the hungry patrons who have an even number
+# use a while loop to feed the hungry patrons who have an even number
 # add the patrons with an even number to the fed_patrons list
 # then remove the even numbered patrons from the line_of_hungry_patrons
 # each list should contain 15 elements
