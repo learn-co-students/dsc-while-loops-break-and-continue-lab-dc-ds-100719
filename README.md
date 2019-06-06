@@ -38,7 +38,7 @@ for slice in range(slices_of_pie):
     Now eaten 5 slices!
     Another slice eaten!
     Now eaten 6 slices!
-    
+
 
 
 ```python
@@ -73,7 +73,7 @@ time_for_breakfast
 ```python
 line_of_hungry_patrons = list(range(0,30))
 fed_patrons = []
-# use a for or while loop to to feed the hungry patrons who have an even number
+# use a for or while loop to feed the hungry patrons who have an even number
 # add the patrons with an even number to the fed_patrons list
 # then remove the even numbered patrons from the line_of_hungry_patrons
 # each list should contain 15 elements
@@ -82,13 +82,13 @@ for patron in line_of_hungry_patrons:
         line_of_hungry_patrons.remove(patron)
         fed_patrons.append(patron)
 print('Those hungry:', line_of_hungry_patrons)
-print('Thos fed:', fed_patrons)
+print('Those fed:', fed_patrons)
     
 ```
 
     Those hungry: [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29]
     Thos fed: [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28]
-    
+
 
 ### `break` And `continue` Statements
 
@@ -120,7 +120,7 @@ for person in people:
 ```
 
     Katie has a dog! Had to check 2 records to find a dog owneer.
-    
+
 
 
 ```python
@@ -164,7 +164,7 @@ for person in people:
 
     Who's over thirty?
     Katie is 30!
-    
+
 
 
 ```python
@@ -201,7 +201,7 @@ print('Sum:', sum(list_of_odd_numbers_plus_ten))
 ```
 
     Sum: 1575
-    
+
 
 ## Summary
 
