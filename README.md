@@ -20,7 +20,7 @@ slices_of_pie = 6
 slices_eaten = 0
 # use a while loop to eat each slice of pie
 # add each slice to the slices_eaten variable
-for slice in range(slices_of_pie):
+while slices_eaten < slices_of_pie:
     print('Another slice eaten!')
     slices_eaten += 1
     print('Now eaten {} slices!'.format(slices_eaten))
@@ -87,7 +87,7 @@ print('Those fed:', fed_patrons)
 ```
 
     Those hungry: [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29]
-    Thos fed: [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28]
+    Those fed: [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28]
 
 
 ### `break` And `continue` Statements
@@ -115,11 +115,11 @@ iteration_count = 0
 for person in people:
     iteration_count += 1
     if person['pet'] == 'Dog':
-        print('{} has a dog! Had to check {} records to find a dog owneer.'.format(person['name'], iteration_count))
+        print('{} has a dog! Had to check {} records to find a dog owner.'.format(person['name'], iteration_count))
         break
 ```
 
-    Katie has a dog! Had to check 2 records to find a dog owneer.
+    Katie has a dog! Had to check 2 records to find a dog owner.
 
 
 
