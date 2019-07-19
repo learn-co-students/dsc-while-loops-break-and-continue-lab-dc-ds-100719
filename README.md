@@ -20,7 +20,7 @@ slices_of_pie = 6
 slices_eaten = 0
 # use a while loop to eat each slice of pie
 # add each slice to the slices_eaten variable
-for slice in range(slices_of_pie):
+while slices_eaten < slices_of_pie:
     print('Another slice eaten!')
     slices_eaten += 1
     print('Now eaten {} slices!'.format(slices_eaten))
