@@ -12,7 +12,7 @@ You will be able to:
 ## Instructions
 
 ### While Loops
-Imagine Agnes is finally ready to achieve her dream of becoming a competitive eater. Because the competition is so fierce, she knows she'll need to do lots of training to become number one.
+Imagine a person Agnes is finally ready to achieve her dream of becoming a competitive eater! Because the competition is so fierce, she knows she'll need to do lots of training to become number one.
 
 Her first regiment of training consists of eating pizza. Below is a for loop version of her training process. Using your knowledge of while loops, translate the pizza eating code below from a for loop to a while loop. 
 
@@ -56,7 +56,7 @@ while slices_eaten < slices_of_pie:
     Now eaten 6 slices!
 
 
-After a long night of training with pizza, Agnes sleep like a rock. When she wakes up in the morning, she realizes that her journey is not over. It has only just begun! In the next cell, continue her training; this time she'll be eating pancakes. None of the pancakes are prepared yet, and she wants to determine how much time she'll have left over after making all the pancakes. Here are the important details:
+After a long night of training with pizza, Agnes sleeps like a rock. When she wakes up in the morning, she realizes that her journey is not over. It has only just begun! In the next cell, continue her training; this time she'll be eating pancakes. None of the pancakes are prepared yet, and she wants to determine how much time she'll have left over after making all the pancakes. Here are the important details:
 
 * Agnes has 1468 seconds allotted for breakfast today
 * Agnes will be making herself 5 pancakes
@@ -197,7 +197,6 @@ Use a for loop to find the first person who is above 29 years old. Use a print s
 ```python
 # use a for loop to find the first person who is above 29 years old in our list of people
 # remember to use a break and or continue statement
-thirty_something_yr_old = None
 # for loop goes here
 print("Who's over thirty?")
 for person in people:
