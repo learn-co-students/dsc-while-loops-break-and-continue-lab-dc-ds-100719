@@ -12,14 +12,30 @@ You will be able to:
 ## Instructions
 
 ### While Loops
-Use while loops to perform the below operations and get the expected return values
+Imagine Agnes is finally ready to achieve her dream of becoming a competitive eater. Because the competition is so fierce, she knows she'll need to do lots of training to become number one.
+
+Her first regiment of training consists of eating pizza. Below is a for loop version of her training process. Using your knowledge of while loops, translate the pizza eating code below from a for loop to a while loop. 
 
 
 ```python
 slices_of_pie = 6
 slices_eaten = 0
+
+for slice in range(slices_of_pie):
+    print('Another slice eaten!')
+    slices_eaten += 1
+    print('Now eaten {} slices!'.format(slices_eaten))
+
+```
+
+
+```python
+slices_of_pie = 6
+slices_eaten = 0
+
 # use a while loop to eat each slice of pie
 # add each slice to the slices_eaten variable
+
 while slices_eaten < slices_of_pie:
     print('Another slice eaten!')
     slices_eaten += 1
@@ -39,6 +55,17 @@ while slices_eaten < slices_of_pie:
     Another slice eaten!
     Now eaten 6 slices!
 
+
+After a long night of training with pizza, Agnes sleep like a rock. When she wakes up in the morning, she realizes that her journey is not over. It has only just begun! In the next cell, continue her training; this time she'll be eating pancakes. None of the pancakes are prepared yet, and she wants to determine how much time she'll have left over after making all the pancakes. Here are the important details:
+
+* Agnes has 1468 seconds allotted for breakfast today
+* Agnes will be making herself 5 pancakes
+* Each pancake takes 27 seconds to cook on each side
+* It takes an average of 5 seconds to either flip a pancake, add it or remove it from the pan
+* There is only room for one pancake at a time on the frying pan
+* Remember there are two sides to every pancake!
+
+After Agnes cooks the 5 pancakes, how much time will she have left over to eat them? Use a while loop to find out below.
 
 
 ```python
@@ -67,6 +94,13 @@ time_for_breakfast
 
 ## For Loops
 
+Fast forward 5 years, and Agnes has become an international competitive eating superstar. Using her starpower, she decides to open up a restaurant chain. As part of a promotional deal, at a grand opening, she tells her fans that if they are part of the first 30 people to the restaurant, there is a 50% chance that they'll receive free food. Agnes executes this by giving each of the first 30 people a number ranging from 0-29. All people who have an even number will receive free food, and all those with odd numbers will sadly remain hungry :(. Use a while loop to create two lists below of:
+
+* `hungry_patrons`
+* `fed_patrons`
+
+All people will start out in the list of `hungry_patrons`, and only the lucky ones will move to `fed_patrons`.
+
 > **Hint:** You may find the [remove method](https://www.programiz.com/python-programming/methods/list/remove) to be useful for the next problem
 
 
@@ -92,7 +126,7 @@ print('Those fed:', fed_patrons)
 
 ### `break` And `continue` Statements
 
-We have a list of person objects with all kinds of attributes. We'll use loops to find a person that meets a certain requirement that we are looking for or create new lists with a certain subset of elements. Write for loops with conditional statements in conjunction with `break` and `continue` to get the desired output.
+Agnes decides that she wants to start creating targeted advertisements for people. Here is a list of customer objects with information about their name, age, job, pet, and pet name. You'll use loops to find people that meet certain requirements for Agnes' targeted marketing. Write for loops with conditional statements in conjunction with `break` and `continue` to get the desired output.
 
 
 ```python
@@ -106,10 +140,16 @@ people = [
 ]
 ```
 
+Use a for loop to find the *first* person in the list of people that has a dog as their pet. The iteration count shouldn't exceed 2. In your loop add a print statement that says
+```python
+
+ "{person} has a dog! Had to check {number} of records to find a dog owner."
+    
+```
+
 
 ```python
-# use the for loop below to find the *first* person in the list of people that has a dog as their pet
-# the iteration count shouldn't exceed 2 iterations
+
 first_dog_person = None
 iteration_count = 0
 for person in people:
@@ -121,6 +161,8 @@ for person in people:
 
     Katie has a dog! Had to check 2 records to find a dog owner.
 
+
+Now, use a for loop to create a list of all the cat owners who are under the age of 28.
 
 
 ```python
@@ -149,6 +191,8 @@ cat_owners
 
 
 
+Use a for loop to find the first person who is above 29 years old. Use a print statement to state their name and how old they are.
+
 
 ```python
 # use a for loop to find the first person who is above 29 years old in our list of people
@@ -166,6 +210,8 @@ for person in people:
     Katie is 30!
 
 
+Use a for loop to create a list of people's names and another list of pet names for all the __dog owners__.
+
 
 ```python
 # use a for loop to create a list of person names and another list of pet names for all dog owners
@@ -179,6 +225,9 @@ for person in people:
     else:
         continue
 ```
+
+## Level Up
+Use a for loop to create a list of odd numbers from the list of numbers from 0 to 100. Each time there is an odd number, add 10 to it and append it to the list_of_odd_numbers_plus_ten. Stop adding numbers to the list when there are 35 numbers in it. Once you have reached 35 numbers, return the sum of the new list of numbers.
 
 
 ```python
