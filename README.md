@@ -52,8 +52,21 @@ for slice in range(slices_of_pie):
     print('Another slice eaten!')
     slices_eaten += 1
     print('Now eaten {} slices!'.format(slices_eaten))
-
 ```
+
+    Another slice eaten!
+    Now eaten 1 slices!
+    Another slice eaten!
+    Now eaten 2 slices!
+    Another slice eaten!
+    Now eaten 3 slices!
+    Another slice eaten!
+    Now eaten 4 slices!
+    Another slice eaten!
+    Now eaten 5 slices!
+    Another slice eaten!
+    Now eaten 6 slices!
+
 
 
 ```python
@@ -272,14 +285,14 @@ cat_owners
 
 
 
-    [{'name': 'Owen',
-      'age': 26,
+    [{'age': 26,
       'job': 'Sales person',
+      'name': 'Owen',
       'pet': 'Cat',
       'pet_name': 'Cosmo'},
-     {'name': 'Josh',
-      'age': 22,
+     {'age': 22,
       'job': 'Student',
+      'name': 'Josh',
       'pet': 'Cat',
       'pet_name': 'Chat'}]
 
