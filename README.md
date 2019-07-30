@@ -44,12 +44,54 @@ for slice in range(slices_of_pie):
 
 
 ```python
+# __SOLUTION__ 
+slices_of_pie = 6
+slices_eaten = 0
+
+for slice in range(slices_of_pie):
+    print('Another slice eaten!')
+    slices_eaten += 1
+    print('Now eaten {} slices!'.format(slices_eaten))
+
+```
+
+
+```python
 slices_of_pie = 6
 slices_eaten = 0
 
 # add your while loop here that achieves the same results as the for loop above
 
 ```
+
+
+```python
+# __SOLUTION__ 
+slices_of_pie = 6
+slices_eaten = 0
+
+# use a while loop to eat each slice of pie
+# add each slice to the slices_eaten variable
+
+while slices_eaten < slices_of_pie:
+    print('Another slice eaten!')
+    slices_eaten += 1
+    print('Now eaten {} slices!'.format(slices_eaten))
+```
+
+    Another slice eaten!
+    Now eaten 1 slices!
+    Another slice eaten!
+    Now eaten 2 slices!
+    Another slice eaten!
+    Now eaten 3 slices!
+    Another slice eaten!
+    Now eaten 4 slices!
+    Another slice eaten!
+    Now eaten 5 slices!
+    Another slice eaten!
+    Now eaten 6 slices!
+
 
 After a long night of training with pizza, Agnes sleeps like a rock. When she wakes up in the morning, she realizes that her journey is not over. It has only just begun! In the next cell, continue her training; this time she'll be eating pancakes. None of the pancakes are prepared yet, and she wants to determine how much time she'll have left over after making all the pancakes. Here are the important details:
 
@@ -76,6 +118,32 @@ number_of_cooked_pancakes = 0
 # print out how much time is remaining
 ```
 
+
+```python
+# __SOLUTION__ 
+time_for_breakfast = 1468 # in seconds
+number_of_cooked_pancakes = 0
+# use a while loop to make yourself 5 pancakes for breakfast
+# each pancake takes 27 seconds to cook on each side
+# it takes an average of 5 seconds to flip a pancake, add or remove a pancake from the pan.
+# you must decrease the time_for_breakfast each time you 
+# add a pancake to the skillet (frying pan) or flip a pancake (i.e. 2 times per pancake)
+# there is only room for one pancake at a time
+# return how much time is left
+while time_for_breakfast > 0 and number_of_cooked_pancakes < 5:
+    #make a pancake
+    time_for_breakfast -= sum([5,27,5,27,5]) #Add to pan, side 1, flip, side 2, remove
+    number_of_cooked_pancakes += 1
+time_for_breakfast
+```
+
+
+
+
+    1123
+
+
+
 ## For Loops
 
 Fast forward 5 years, and Agnes has become an international competitive eating superstar. Using her starpower, she decides to open up a restaurant chain. As part of a promotional deal, at a grand opening, she tells her fans that if they are part of the first 30 people to the restaurant, there is a 50% chance that they'll receive free food. Agnes executes this by giving each of the first 30 people a number ranging from 0-29. All people who have an even number will receive free food, and all those with odd numbers will sadly remain hungry :(. Use a while loop to create two lists below of:
@@ -97,12 +165,47 @@ fed_patrons = []
 # each list should contain 15 elements
 ```
 
+
+```python
+# __SOLUTION__ 
+line_of_hungry_patrons = list(range(0,30))
+fed_patrons = []
+# use a for or while loop to feed the hungry patrons who have an even number
+# add the patrons with an even number to the fed_patrons list
+# then remove the even numbered patrons from the line_of_hungry_patrons
+# each list should contain 15 elements
+for patron in line_of_hungry_patrons:
+    if patron % 2 == 0:
+        line_of_hungry_patrons.remove(patron)
+        fed_patrons.append(patron)
+print('Those hungry:', line_of_hungry_patrons)
+print('Those fed:', fed_patrons)
+    
+```
+
+    Those hungry: [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29]
+    Those fed: [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28]
+
+
 ### `break` And `continue` Statements
 
 Agnes decides that she wants to start creating targeted advertisements for people. Here is a list of customer objects with information about their name, age, job, pet, and pet name. You'll use loops to find people that meet certain requirements for Agnes' targeted marketing. Write for loops with conditional statements in conjunction with `break` and `continue` to get the desired output.
 
 
 ```python
+people = [
+    {'name': "Daniel", 'age': 29, 'job': "Engineer", 'pet': "Cat", 'pet_name': "Gato"}, 
+    {'name': "Katie", 'age': 30, 'job': "Teacher", 'pet': "Dog", 'pet_name': "Frank"},
+    {'name': "Owen", 'age': 26, 'job': "Sales person", 'pet': "Cat", 'pet_name': "Cosmo"},
+    {'name': "Josh", 'age': 22, 'job': "Student", 'pet': "Cat", 'pet_name': "Chat"},
+    {'name': "Estelle", 'age': 35, 'job': "French Diplomat", 'pet': "Dog", 'pet_name': "Gabby"},
+    {'name': "Gustav", 'age': 24, 'job': "Brewer", 'pet': "Dog", 'pet_name': "Helen"}
+]
+```
+
+
+```python
+# __SOLUTION__ 
 people = [
     {'name': "Daniel", 'age': 29, 'job': "Engineer", 'pet': "Cat", 'pet_name': "Gato"}, 
     {'name': "Katie", 'age': 30, 'job': "Teacher", 'pet': "Dog", 'pet_name': "Frank"},
@@ -130,6 +233,22 @@ for person in people:
     pass
 ```
 
+
+```python
+# __SOLUTION__ 
+
+first_dog_person = None
+iteration_count = 0
+for person in people:
+    iteration_count += 1
+    if person['pet'] == 'Dog':
+        print('{} has a dog! Had to check {} records to find a dog owner.'.format(person['name'], iteration_count))
+        break
+```
+
+    Katie has a dog! Had to check 2 records to find a dog owner.
+
+
 Now, use a for loop to create a list of all the cat owners who are under the age of 28.
 
 
@@ -137,6 +256,34 @@ Now, use a for loop to create a list of all the cat owners who are under the age
 cat_owners = None
 # for loop goes here
 ```
+
+
+```python
+# __SOLUTION__ 
+# use a for loop to create a list of the cat owners who are under the age of 28
+cat_owners = []
+# for loop goes here
+for person in people:
+    if person['age'] < 28 and person['pet'] == "Cat":
+        cat_owners.append(person)
+cat_owners
+```
+
+
+
+
+    [{'name': 'Owen',
+      'age': 26,
+      'job': 'Sales person',
+      'pet': 'Cat',
+      'pet_name': 'Cosmo'},
+     {'name': 'Josh',
+      'age': 22,
+      'job': 'Student',
+      'pet': 'Cat',
+      'pet_name': 'Chat'}]
+
+
 
 Use a for loop to find the first person who is above 29 years old. Use a print statement to state their name and how old they are.
 
@@ -146,6 +293,23 @@ thirty_something_yr_old = None
 # for loop goes here
 ```
 
+
+```python
+# __SOLUTION__ 
+# use a for loop to find the first person who is above 29 years old in our list of people
+# remember to use a break and or continue statement
+# for loop goes here
+print("Who's over thirty?")
+for person in people:
+    if person['age'] > 29:
+        print('{} is {}!'.format(person['name'], person['age']))
+        break
+```
+
+    Who's over thirty?
+    Katie is 30!
+
+
 Use a for loop to create a list of people's names and another list of pet names for all the **dog owners**.
 
 
@@ -153,6 +317,21 @@ Use a for loop to create a list of people's names and another list of pet names 
 dog_owner_names = None
 dog_names = None
 # for loop goes here
+```
+
+
+```python
+# __SOLUTION__ 
+# use a for loop to create a list of person names and another list of pet names for all dog owners
+dog_owner_names = []
+dog_names = []
+# for loop goes here
+for person in people:
+    if person['pet'] == 'Dog':
+        dog_owner_names.append(person['name'])
+        dog_names.append(person['pet_name'])
+    else:
+        continue
 ```
 
 ## Level Up 
@@ -166,6 +345,30 @@ list_of_odd_numbers_plus_ten = []
 for number in list_of_numbers:
     pass
 ```
+
+
+```python
+# __SOLUTION__ 
+# use a for loop to create a list of odd numbers from the list of numbers from 0 to 100
+# each time there is an odd number, add 10 to it and append it to the list_of_odd_numbers_plus_ten
+# stop adding numbers to the list when there are 35 numbers
+# use break and continue statements in your code
+list_of_numbers = list(range(0,100))
+list_of_odd_numbers_plus_ten = []
+for number in list_of_numbers:
+    if number % 2 == 1:
+        list_of_odd_numbers_plus_ten.append(number+10)
+    else:
+        pass
+    if len(list_of_odd_numbers_plus_ten) >= 35:
+        break
+    else:
+        continue
+print('Sum:', sum(list_of_odd_numbers_plus_ten))
+```
+
+    Sum: 1575
+
 
 ## Summary
 
