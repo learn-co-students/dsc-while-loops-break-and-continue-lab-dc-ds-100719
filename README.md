@@ -12,9 +12,10 @@ You will be able to:
 ## Instructions
 
 ### While Loops
-Imagine a person Agnes is finally ready to achieve her dream of becoming a competitive eater! Because the competition is so fierce, she knows she'll need to do lots of training to become number one.
 
-Her first regiment of training consists of eating pizza. Below is a for loop version of her training process. Using your knowledge of while loops, translate the pizza eating code below from a for loop to a while loop. 
+Imagine a person named Agnes is finally ready to achieve her dream of becoming a competitive eater! Because the competition is so fierce, she knows she'll need to do lots of training to become number one.
+
+Her first regiment of training consists of eating pizza. Below is a for loop version of her training process. Using your knowledge of while loops, translate the pizza eating code below from a for loop to a while loop.
 
 
 ```python
@@ -25,8 +26,21 @@ for slice in range(slices_of_pie):
     print('Another slice eaten!')
     slices_eaten += 1
     print('Now eaten {} slices!'.format(slices_eaten))
-
 ```
+
+    Another slice eaten!
+    Now eaten 1 slices!
+    Another slice eaten!
+    Now eaten 2 slices!
+    Another slice eaten!
+    Now eaten 3 slices!
+    Another slice eaten!
+    Now eaten 4 slices!
+    Another slice eaten!
+    Now eaten 5 slices!
+    Another slice eaten!
+    Now eaten 6 slices!
+
 
 
 ```python
@@ -63,7 +77,7 @@ After a long night of training with pizza, Agnes sleeps like a rock. When she wa
 * Each pancake takes 27 seconds to cook on each side
 * It takes an average of 5 seconds to either flip a pancake, add it or remove it from the pan
 * There is only room for one pancake at a time on the frying pan
-* Remember there are two sides to every pancake!
+* Remember there are two sides to every pancake!  
 
 After Agnes cooks the 5 pancakes, how much time will she have left over to eat them? Use a while loop to find out below.
 
@@ -140,12 +154,13 @@ people = [
 ]
 ```
 
-Use a for loop to find the *first* person in the list of people that has a dog as their pet. The iteration count shouldn't exceed 2. In your loop add a print statement that says
-```python
+Use a for loop to find the first person in the list of people that has a dog as their pet. The iteration count shouldn't exceed 2. In your loop add a print statement that says
 
+```python
  "{person} has a dog! Had to check {number} of records to find a dog owner."
-    
+
 ```
+The code has been started for you below
 
 
 ```python
@@ -178,14 +193,14 @@ cat_owners
 
 
 
-    [{'name': 'Owen',
-      'age': 26,
+    [{'age': 26,
       'job': 'Sales person',
+      'name': 'Owen',
       'pet': 'Cat',
       'pet_name': 'Cosmo'},
-     {'name': 'Josh',
-      'age': 22,
+     {'age': 22,
       'job': 'Student',
+      'name': 'Josh',
       'pet': 'Cat',
       'pet_name': 'Chat'}]
 
@@ -209,7 +224,7 @@ for person in people:
     Katie is 30!
 
 
-Use a for loop to create a list of people's names and another list of pet names for all the __dog owners__.
+Use a for loop to create a list of people's names and another list of pet names for all the **dog owners**.
 
 
 ```python
@@ -225,7 +240,7 @@ for person in people:
         continue
 ```
 
-## Level Up
+## Level Up 
 Use a for loop to create a list of odd numbers from the list of numbers from 0 to 100. Each time there is an odd number, add 10 to it and append it to the list_of_odd_numbers_plus_ten. Stop adding numbers to the list when there are 35 numbers in it. Once you have reached 35 numbers, return the sum of the new list of numbers.
 
 
