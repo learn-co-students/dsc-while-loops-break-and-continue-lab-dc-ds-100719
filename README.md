@@ -6,8 +6,9 @@ In this lab, we will practice using `while` loops, and `break` and `continue` st
 
 ## Objectives
 You will be able to:
-- Use `while` loops
-- Use `break` and `continue` statements inside a loop
+
+* Use a `while` loop
+* Use `break` and `continue` to add control flow to a `while` loop
 
 ## Instructions
 
@@ -268,4 +269,4 @@ print('Sum:', sum(list_of_odd_numbers_plus_ten))
 
 ## Summary
 
-In this lab, we practiced using `while` loops, which continue executing their block of code until the given condition is no longer truthy. This is useful for instances where we do not have a collection or do not need a collection to solve our problem, especially when we would only like to stop the process according to a certain condition. We then practiced using control flow statements, `break` and `continue`, to selectively operate on elements, append them to new lists, or assign them to new variables.
+In this lab, we practiced using `while` loops, which continue executing their block of code until the given condition is no longer true. This is useful for instances where we do not have a collection or do not need a collection to solve our problem, especially when we would only like to stop the process according to a certain condition. We then practiced using control flow statements, `break` and `continue`, to selectively operate on elements, append them to new lists, or assign them to new variables.
